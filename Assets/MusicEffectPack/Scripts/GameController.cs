@@ -4,7 +4,7 @@ using System.IO;
 using System;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour {
+public class GameController : MonoBehaviour {
 
 	public GameObject[] notes;
 	private float[] _timing;
@@ -82,6 +82,8 @@ public class GameManager : MonoBehaviour {
 	public void GoodTimingFunc(int num){
 		Debug.Log ("Line:" + num + " good!");
 		Debug.Log (GetMusicTime());
+		// 追加
+		EffectManager.Instance.PlayEffect(num);
 		_score++;
 	}
 }

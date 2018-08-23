@@ -6,10 +6,6 @@ public class CSVWriter : MonoBehaviour {
 
 	public string fileName; // 保存するファイル名
 
-//	void Start () {
-//		WriteCSV ("Hello,World");
-//	}
-
 	// CSVに書き込む処理
 	public void WriteCSV(string txt){
 		StreamWriter streamWriter;
